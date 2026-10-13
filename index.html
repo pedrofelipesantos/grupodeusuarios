@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#004164">
+    <title>Grupo de Usuários — STJ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Página inicial do Grupo de Usuários">
+          <span class="brand-mark" aria-hidden="true">STJ</span>
+          <span class="brand-name">Grupo de Usuários</span>
+        </a>
+        <div class="topbar-right">
+          <span class="team-label"><span class="status-dot"></span> Grupo de testes</span>
+          <span class="role-badge hidden" id="role-badge"></span>
+          <button class="text-button hidden" id="sign-out" type="button">Sair</button>
+        </div>
+      </header>
+
+      <section class="intro">
+        <div class="intro-art" aria-hidden="true">
+        <svg viewBox="0 0 600 320" preserveAspectRatio="xMaxYMax meet" focusable="false">
+          <circle cx="506" cy="96" r="38" fill="#ffcd73"/>
+          <circle cx="499" cy="101" r="35" fill="#fcb414"/>
+          <rect x="246" y="146" width="310" height="32" fill="#dcd8d0"/>
+          <g fill="#004164"><circle cx="262" cy="157" r="2.4"/><circle cx="274" cy="157" r="2.4"/><circle cx="286" cy="157" r="2.4"/><circle cx="298" cy="157" r="2.4"/><circle cx="310" cy="157" r="2.4"/><circle cx="322" cy="157" r="2.4"/><circle cx="334" cy="157" r="2.4"/><circle cx="346" cy="157" r="2.4"/><circle cx="358" cy="157" r="2.4"/><circle cx="370" cy="157" r="2.4"/><circle cx="382" cy="157" r="2.4"/><circle cx="394" cy="157" r="2.4"/><circle cx="406" cy="157" r="2.4"/><circle cx="418" cy="157" r="2.4"/><circle cx="430" cy="157" r="2.4"/><circle cx="442" cy="157" r="2.4"/><circle cx="454" cy="157" r="2.4"/><circle cx="466" cy="157" r="2.4"/><circle cx="478" cy="157" r="2.4"/><circle cx="490" cy="157" r="2.4"/><circle cx="502" cy="157" r="2.4"/><circle cx="514" cy="157" r="2.4"/><circle cx="526" cy="157" r="2.4"/><circle cx="538" cy="157" r="2.4"/></g>
+          <rect x="246" y="164" width="310" height="12" fill="#004164"/>
+          <g stroke="#2e6485" stroke-width="1"><path d="M268 164v12"/><path d="M286 164v12"/><path d="M304 164v12"/><path d="M322 164v12"/><path d="M340 164v12"/><path d="M358 164v12"/><path d="M376 164v12"/><path d="M394 164v12"/><path d="M412 164v12"/><path d="M430 164v12"/><path d="M448 164v12"/><path d="M466 164v12"/><path d="M484 164v12"/><path d="M502 164v12"/><path d="M520 164v12"/><path d="M538 164v12"/></g>
+          <rect x="226" y="178" width="374" height="74" fill="#c9c5bd"/>
+          <rect x="242" y="178" width="314" height="74" fill="#302e31"/>
+          <g fill="#ece8e0"><path d="M246 252C239 228 257 202 249 178H264C272 202 254 228 261 252Z"/><path d="M268 252C261 228 279 202 271 178H286C294 202 276 228 283 252Z"/><path d="M290 252C283 228 301 202 293 178H308C316 202 298 228 305 252Z"/><path d="M312 252C305 228 323 202 315 178H330C338 202 320 228 327 252Z"/><path d="M334 252C327 228 345 202 337 178H352C360 202 342 228 349 252Z"/><path d="M356 252C349 228 367 202 359 178H374C382 202 364 228 371 252Z"/><path d="M378 252C371 228 389 202 381 178H396C404 202 386 228 393 252Z"/><path d="M400 252C393 228 411 202 403 178H418C426 202 408 228 415 252Z"/><path d="M422 252C415 228 433 202 425 178H440C448 202 430 228 437 252Z"/><path d="M444 252C437 228 455 202 447 178H462C470 202 452 228 459 252Z"/><path d="M466 252C459 228 477 202 469 178H484C492 202 474 228 481 252Z"/><path d="M488 252C481 228 499 202 491 178H506C514 202 496 228 503 252Z"/><path d="M510 252C503 228 521 202 513 178H528C536 202 518 228 525 252Z"/><path d="M532 252C525 228 543 202 535 178H550C558 202 540 228 547 252Z"/></g>
+          <rect x="226" y="252" width="374" height="7" fill="#302e31" opacity=".55"/>
+          <rect x="0" y="259" width="600" height="61" fill="#e3dfd7"/>
+          <polygon points="300,320 600,196 600,320" fill="#437757"/>
+          <path d="M410 320C460 268 530 244 600 240V320Z" fill="#004c23"/>
+        </svg>
+        </div>
+        <div class="intro-content">
+          <p class="eyebrow">Testes de software · Registro compartilhado</p>
+          <h1><span class="intro-kicker">Grupo de Usuários</span><em>do STJ</em></h1>
+          <p class="intro-copy">Registre o que aconteceu, o que você esperava e o que o grupo precisa saber. Seus relatos ficam disponíveis para toda a equipe de testes.</p>
+        </div>
+      </section>
+
+      <section class="auth-card hidden" id="auth-view">
+        <div class="auth-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg></div>
+        <div>
+          <p class="eyebrow">ACESSO DA EQUIPE</p>
+          <h2>Acesse seus relatos</h2>
+          <p class="muted">Informe o e-mail convidado e enviaremos um link seguro para entrar.</p>
+        </div>
+        <form id="login-form" class="login-form">
+          <label for="login-email">E-mail</label>
+          <div class="input-row">
+            <input id="login-email" name="email" type="email" autocomplete="email" placeholder="voce@organizacao.com.br" required>
+            <button class="button button-dark" type="submit">Enviar link de acesso <span aria-hidden="true">→</span></button>
+          </div>
+          <p class="form-message" id="login-message" aria-live="polite"></p>
+        </form>
+        <div class="demo-option">
+          <p>Quer conhecer o aplicativo?</p>
+          <button class="button button-demo" id="demo-button" type="button">Abrir demonstração local <span aria-hidden="true">→</span></button>
+          <span>Usa relatos de exemplo e salva o que você adicionar somente neste navegador.</span>
+        </div>
+      </section>
+
+      <div id="app-view" class="hidden">
+        <div class="demo-banner hidden" id="demo-banner"><span class="status-dot"></span> Demonstração local — os relatos ficam neste navegador e não são compartilhados com o grupo no Supabase.</div>
+        <section class="summary-grid" aria-label="Resumo dos relatos do grupo">
+          <article class="summary-card summary-total">
+            <span class="summary-label">RELATOS</span>
+            <strong id="total-count">—</strong>
+            <span class="summary-caption">experiências compartilhadas</span>
+            <span class="summary-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 12h7M9 16h5"/></svg></span>
+          </article>
+          <article class="summary-card">
+            <span class="summary-label">PRECISAM DE ATENÇÃO</span>
+            <strong id="attention-count">—</strong>
+            <span class="summary-caption">impacto alto ou bloqueador</span>
+            <span class="summary-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4 2.5 20h19z"/><path d="M12 10v4.5M12 17.5v.01"/></svg></span>
+          </article>
+          <article class="summary-card">
+            <span class="summary-label">FACILIDADE DE USO</span>
+            <strong><span id="average-rating">—</span><small>/ 5</small></strong>
+            <span class="summary-caption">avaliação média da equipe</span>
+            <span class="summary-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V14h4v6M10 20V9h4v11M16 20V4h4v16M2.5 20h19"/></svg></span>
+          </article>
+        </section>
+
+        <section class="workspace">
+          <aside class="form-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">ADICIONE AO REGISTRO</p>
+                <h2>Compartilhe uma experiência</h2>
+              </div>
+              <span class="plus-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 8v8M8 12h8"/></svg></span>
+            </div>
+            <p class="panel-copy">Registre um problema, algo que funcionou bem ou qualquer aprendizado importante para a equipe.</p>
+            <form id="feedback-form">
+              <label for="tool">Ferramenta testada <span class="required">*</span></label>
+              <select id="tool" name="tool" required>
+                <option value="" selected disabled>Selecione uma ferramenta</option>
+                <option value="Pesquisa de semelhantes">Pesquisa de semelhantes</option>
+                <option value="Agrupamento de processos">Agrupamento de processos</option>
+                <option value="Assistente de minuta do Logos">Assistente de minuta do Logos</option>
+              </select>
+
+              <label for="title">O que aconteceu? <span class="required">*</span></label>
+              <input id="title" name="title" maxlength="120" placeholder="Resumo breve e claro" required>
+
+              <label for="category">Tipo</label>
+              <select id="category" name="category">
+                <option value="Suggestion" selected>Sugestão</option>
+                <option value="Bug">Problema</option>
+                <option value="Usability">Usabilidade</option>
+                <option value="Performance">Desempenho</option>
+                <option value="Access">Acesso</option>
+                <option value="Positive">Ponto positivo</option>
+                <option value="Other">Outro</option>
+              </select>
+
+              <div class="field-pair">
+                <div>
+                  <label for="outcome">Resultado do teste</label>
+                  <select id="outcome" name="outcome">
+                    <option value="Partial" selected>Funcionou parcialmente como esperado</option>
+                    <option value="Failed">Não funcionou</option>
+                    <option value="Passed">Funcionou como esperado</option>
+                    <option value="Blocked">Não foi possível concluir</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="severity">Impacto</label>
+                  <select id="severity" name="severity">
+                    <option value="Low" selected>Baixo</option>
+                    <option value="Medium">Médio</option>
+                    <option value="High">Alto</option>
+                    <option value="Blocker">Bloqueador</option>
+                  </select>
+                </div>
+              </div>
+
+              <label for="details">Conte o que você observou <span class="required">*</span></label>
+              <textarea id="details" name="details" rows="3" maxlength="3000" placeholder="Descreva o que viu ou sentiu durante o teste..." required></textarea>
+
+              <details class="more-fields">
+                <summary>Adicione o resultado esperado, etapas ou sugestão</summary>
+                <div class="details-fields">
+                  <label for="expected">O que você esperava?</label>
+                  <textarea id="expected" name="expected" rows="2" maxlength="1500" placeholder="Descreva o resultado esperado"></textarea>
+                  <label for="steps">Etapas para reproduzir</label>
+                  <textarea id="steps" name="steps" rows="2" maxlength="2000" placeholder="1. Abra… 2. Selecione… 3. Observe…"></textarea>
+                  <label for="suggestion">Sugestão ou contexto adicional</label>
+                  <textarea id="suggestion" name="suggestion" rows="2" maxlength="1500" placeholder="O que poderia melhorar?"></textarea>
+                </div>
+              </details>
+
+              <div class="rating-field">
+                <label for="rating">Qual foi a facilidade para concluir?</label>
+                <div class="rating-control">
+                  <input id="rating" name="rating" type="range" min="1" max="5" value="3">
+                  <output id="rating-output" for="rating">3 <span>/ 5</span></output>
+                </div>
+                <div class="range-labels"><span>Muito difícil</span><span>Muito fácil</span></div>
+              </div>
+              <button class="button button-primary submit-button" id="submit-button" type="submit">Compartilhar com o grupo <span aria-hidden="true">→</span></button>
+              <p class="form-message" id="form-message" aria-live="polite"></p>
+            </form>
+          </aside>
+
+          <section class="feed-panel" aria-labelledby="feed-title">
+            <div class="feed-heading">
+              <div>
+                <p class="eyebrow">O QUE A EQUIPE ESTÁ OBSERVANDO</p>
+                <h2 id="feed-title">Relatos compartilhados <span class="feed-count" id="feed-count">0</span></h2>
+              </div>
+              <button class="text-button export-button" id="export-button" type="button">Baixar CSV <span aria-hidden="true">↓</span></button>
+            </div>
+            <div class="filters">
+              <label class="search-box" for="search-input">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+                <input id="search-input" type="search" placeholder="Buscar nos relatos…" aria-label="Buscar relatos">
+              </label>
+              <select id="filter-outcome" aria-label="Filtrar por resultado">
+                <option value="">Todos os resultados</option>
+                <option value="Partial">Funcionou parcialmente como esperado</option>
+                <option value="Failed">Não funcionou</option>
+                <option value="Passed">Funcionou como esperado</option>
+                <option value="Blocked">Não foi possível concluir</option>
+              </select>
+              <select id="filter-tool" aria-label="Filtrar por ferramenta">
+                <option value="">Todas as ferramentas</option>
+                <option value="Pesquisa de semelhantes">Pesquisa de semelhantes</option>
+                <option value="Agrupamento de processos">Agrupamento de processos</option>
+                <option value="Assistente de minuta do Logos">Assistente de minuta do Logos</option>
+              </select>
+            </div>
+            <div id="feedback-list" class="feedback-list" aria-live="polite"></div>
+          </section>
+        </section>
+      </div>
+      <footer class="footer"><span>Superior Tribunal de Justiça — O Tribunal da Cidadania</span><span>Grupo de Usuários</span></footer>
+    </main>
+    <template id="feedback-template">
+      <article class="feedback-card">
+        <div class="feedback-card-top">
+          <div class="tag-row"></div>
+          <time></time>
+        </div>
+        <h3></h3>
+        <p class="feedback-tool"></p>
+        <p class="feedback-details"></p>
+        <div class="feedback-extra hidden"></div>
+        <div class="feedback-card-bottom">
+          <span class="feedback-author"></span>
+          <span class="feedback-rating"></span>
+          <button class="delete-entry hidden" type="button">Excluir</button>
+        </div>
+      </article>
+    </template>
+  </body>
+</html>
